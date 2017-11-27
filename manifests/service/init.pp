@@ -134,10 +134,10 @@ define logstash::service::init{
     ensure     => $service_ensure,
     enable     => $service_enable,
     name       => $name,
-    hasstatus  => $logstash::params::service_hasstatus,
-    hasrestart => $logstash::params::service_hasrestart,
-    pattern    => $logstash::params::service_pattern,
-    provider   => $service_provider
+    #hasstatus  => $logstash::params::service_hasstatus,
+    #hasrestart => $logstash::params::service_hasrestart,
+    #pattern    => $logstash::params::service_pattern,
+    #provider   => $service_provider
   }
 
 }
